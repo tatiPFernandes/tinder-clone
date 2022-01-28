@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import TinderCards from "./TinderCards";
-import SwipeButtons from "./SwipeButtons";
+import SwipeButton from "./SwipeButton";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <TinderCards />
 
       {/* SwipeButtons */}
-      <SwipeButtons />
+      <SwipeButton />
     </div>
   );
 }

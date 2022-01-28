@@ -1,5 +1,5 @@
 import React from "react";
-import "./SwipeButtons.css";
+import "./SwipeButton.css";
 
 import ReplayIcon from "@material-ui/icons/Replay";
 import CloseIcon from "@material-ui/icons/Close";
@@ -8,7 +8,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
 import IconButton from "@material-ui/core/IconButton";
 
-function SwipeButtons() {
+function SwipeButton() {
   return (
     <div className="swipeButtons">
       <IconButton  onClick={() => window.location.reload(false)} className="swipeButtons__repeat">
@@ -34,4 +34,4 @@ function SwipeButtons() {
   );
 }
 
-export default SwipeButtons;
+export default SwipeButton;
