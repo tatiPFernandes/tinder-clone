@@ -4,7 +4,7 @@ const instance = axios.create({
   // localhost
   // baseURL: "http://localhost:8001",
   // host on heroku
-  baseURL = "https://basic-tinder-clone.herokuapp.com"
+  baseURL = "https://basic-tinder-clone.herokuapp.com/"
   
 });
 
