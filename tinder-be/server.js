@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import Cards from "./dbCards.js";
+import Card from "./dbCards.js";
 import Cors from "cors";
 
 // App Config
@@ -30,7 +30,7 @@ app.post("/tinder/cards", (req, res) => {
   // save request body into a var
   const dbCard = req.body;
   //   function to create a new document
-  Cards.create(dbCard, (err, data) => {
+  Card.create(dbCard, (err, data) => {
     // if there is error
     if (err) {
       // set response to 500, which means internal server error and send error back
@@ -46,7 +46,7 @@ app.post("/tinder/cards", (req, res) => {
 // with this will be retrieving every single thing from the collection DB that we just created
 app.get("/tinder/cards", (req, res) => {
   //   function to find a card
-  Cards.find((err, data) => {
+  Card.find((err, data) => {
     // if there is error
     if (err) {
       // set response to 500, which means internal server error and send error back

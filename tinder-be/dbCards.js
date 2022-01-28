@@ -10,4 +10,4 @@ const cardSchema = mongoose.Schema({
 
 // export the whole schema, define collection name, and pass in the cardSchema
 // in nosql Database: collection > [documents] > collection > [documents] > ....
-export default mongoose.model("cards", cardSchema);
+export default mongoose.model("card", cardSchema);
